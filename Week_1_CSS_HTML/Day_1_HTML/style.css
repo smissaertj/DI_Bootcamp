@@ -1,0 +1,65 @@
+/* Universal Selector */
+* {
+    margin: 0px;
+    background: gray;
+}
+
+.profile{
+    width: 500px;
+    height: 500px;
+    background-color: coral;
+    border: 5px solid red;
+    border-radius: 50%;
+    background-image: url("image.jpeg")
+}
+
+div {
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+}
+
+div p {
+    color: green;
+}
+
+div > p {
+    background-color: yellow;
+}
+
+h1 {
+    color: white;
+    background-color: rgb(0,0,255);
+}
+
+h3, h4, h5 {
+    color: cadetblue;
+}
+
+p {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#h6_element {
+    color: blueviolet;
+}
+
+.post {
+    font-size: 30px;
+    text-align: justify;
+    color: aquamarine;
+    width: 600px;
+}
+
+.background-green {
+    background-color: green;
+}
+
+.joeri {
+    border: 10px solid black;
+    padding: 25px;
+    margin: 25px;
+}
+
+
