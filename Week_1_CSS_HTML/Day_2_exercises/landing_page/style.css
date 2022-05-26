@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #BFD7B5 ;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #636B61;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    top: 25%;
+}
+
+.navbar li:first-child {
+    display: inline;
+    float: left;
+    margin-left: 5%;
+    font-size: 1em;
+}
+
+.navbar li button {
+    float: right;
+    margin-right: 5%;
+    background-color: #F2DDA4;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.header{
+    background-image: url("background.jpg");
+    height: 600px;
+}
+
+.header-text {
+    position: relative;
+    top: 35%;
+    width: 50%;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.header-text p {
+    font-size: 2em;
+}
+
+.header-text input {
+    width: 400px;
+    border-radius: 5px;
+}
+
+.header-text button {
+    background-color: #F2DDA4;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.content {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    /*border: 1px solid red;*/
+}
+
+.left-box {
+    display: inline-block;
+    position: relative;
+    top: 25%;
+    width: 25%;
+    /*border: 1px solid red;*/
+}
+
+.middle-box {
+    display: inline-block;
+    position: relative;
+    top: 25%;
+    width: 25%;
+    margin: 0 25px 0 25px;
+    /*border: 1px solid red;*/
+}
+
+.right-box {
+    display: inline-block;
+    position: relative;
+    top: 25%;
+    width: 25%;
+    /*border: 1px solid red;*/
+}
+
+.box-title {
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: #B36A5E;
+}
+
+.box-text {
+    font-weight: bolder;
+    font-size: 1.3em;
+    color: white;
+}
+
+.fa-10x {
+    color: #B36A5E;
+}
