@@ -1,0 +1,51 @@
+ul {
+    margin-left: 60px;
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.cat_senses {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 50px;
+}
+
+.img_cat {
+    border: 5px solid red;
+}
+
+.img_lion {
+    border: 5px solid orange;
+    margin-top: 5%;
+}
+
+.table {
+    width: 75%;
+    margin: auto;
+}
+
+.table_title {
+    color: red;
+    border: 1px solid red;
+}
+
+.table_empty_row {
+    height: 20px;
+}
+
+.table_column_title {
+    font-weight: bolder;
+    border: 1px solid black;
+}
