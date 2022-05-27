@@ -55,6 +55,11 @@ a {
     width: 100%;
 }
 
+.login form a {
+    color: gray;
+    text-decoration: none;
+}
+
 .login form input{
     display: inline;
 }
