@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+}
+
+body {
+   color: gray;
+   background-color: #A9B4C2;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: black;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    height: 700px;
+}
+
+.left-panel {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+}
+
+.right-panel {
+    background: rgb(2,0,36);
+    background: linear-gradient(146deg, rgba(2,0,36,1) 2%, rgba(100,9,121,1) 25%);
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    float: right;
+}
+
+.center {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 25%;
+}
+
+.login form input{
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    height: 30px;
+    background-color: #F1F1F1;
+    border: none;
+}
+
+.login form input label{
+    display: inline-block;
+}
+
+.login form button {
+    background-color: purple;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: 100%;
+    height: 30px;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    border: none;
+}
+
+.login form button:hover {
+    background-color: #4b3f72;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: 100%;
+    height: 30px;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    border: none;
+}
+
+.login h2 {
+    width: 100%;
+    border-bottom: 2px solid #F1F1F1;
+    margin-top: 20px;
+    line-height: 0.1em;
+}
+
+.login h2 span {
+    background-color: #A9B4C2;
+
+    padding: 0 10px;
+}
+
+.login ul {
+    margin-top: 25px;
+    width: 75%;
+}
+
+.login ul li {
+    display: inline;
+    margin: 15px;
+}
+
+.login ul li a{
+    color: #F1F1F1;
+    text-decoration: none;
+}
+
+.login ul li a:hover{
+    color: #4b3f72;
+}
+
+.copyright {
+    margin-top: 10%;
+}
+
+.register {
+    color: #F1F1F1;
+    font-weight: bolder;
+    width: 50%;
+}
+
+.register li h1 {
+    color: #F1F1F1;
+    font-weight: bolder;
+    margin: 10px 10px;
+}
+
+.register li button {
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: rgba(255, 0, 0, 0);
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 40%;
+    height: 35px;
+}
+
+.register li button:hover {
+    background-color: #4b3f72;
+    border: 2px solid #4b3f72;
+}
+
+.register li button i {
+    margin: 0 10px 0 10px;
+}
