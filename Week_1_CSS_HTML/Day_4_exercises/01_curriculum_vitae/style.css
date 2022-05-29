@@ -5,17 +5,17 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #EDEDE9;
+    /*background-color: #8ECAE6;*/
+    background-color: #086788;
+
+}
+
+h3 {
+    color: white;
 }
 
 ul {
     list-style-type: none;
-}
-
-a {
-    text-decoration: underline;
-    color: black;
-
 }
 
 .container {
@@ -26,15 +26,16 @@ a {
     width: 50%;
     height: auto;
     margin: 0 auto;
+    display: block;
     text-align: center;
 }
 
 .navbar {
-    background-color: #71697a;
+    background-color: #023047;
     font-weight: bolder;
     color: white;
     width: 100%;
-    height: 3vh;
+    height: 5vh;
     /*border: 1px solid red;*/
 }
 
@@ -68,14 +69,20 @@ a {
 }
 
 .header h2 {
-
+    color: white;
 }
 
-.header img {
+.header .profile-pic {
     border-radius: 50%;
-    width: 20vh;
-    margin: 2vh;
+    width: 25vh;
+    margin: 4vh auto;
     display: block;
+    box-shadow: 24px 8px 12px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-out;
+}
+
+.header .profile-pic:hover{
+    transform: scale(1.2, 1.2);
 }
 
 .header ul li {
@@ -83,11 +90,26 @@ a {
 }
 
 .location {
-    margin: 0 auto 2vh auto;
+    margin: 10vh auto 5vh auto;
     display: block;
-    padding-bottom: 10px;
     font-weight: bolder;
+    color: white;
     /*border: 1px solid red;*/
+}
+
+.location .fa-map-location-dot {
+    margin-right: 5px;
+}
+
+.location a {
+    color: #dde1e4;
+    text-decoration: none;
+}
+
+.about {
+    /*border: 1px solid red;*/
+    color: #dde1e4;
+    margin-bottom: 5vh;
 }
 
 .left-column {
@@ -106,6 +128,10 @@ a {
     /*border: 1px solid red;*/
 }
 
+.left-column, .right-column ul li {
+    color: #dde1e4;
+}
+
 .left-column h3{
     margin-top: 10px;
 }
@@ -115,11 +141,12 @@ a {
 }
 
 .fa-brands {
-    color: #d19e78;
+    color: #FB8500;
     margin: 0 5px 0 5px;
     transition: all;
 }
 
 .fa-brands:hover {
+    color: #FFB703;
     transform: scale(1.25);
 }
