@@ -112,17 +112,20 @@ ul {
     margin-bottom: 5vh;
 }
 
-.left-column {
+.left-column, .right-column{
     width: 49%;
     display: inline-block;
+    margin-bottom: 2vh;
+
+}
+
+.left-column {
     float: left;
     text-align: right;
     /*border: 1px solid red;*/
 }
 
 .right-column {
-    width: 49%;
-    display: inline-block;
     float: right;
     text-align: left;
     /*border: 1px solid red;*/
@@ -138,6 +141,10 @@ ul {
 
 .right-column h3{
     margin-top: 10px;
+}
+
+.language-level {
+    font-style: italic;
 }
 
 .fa-brands {
