@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #E4DFDA;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #3E505B;
+    color: white;
+    width: 100%;
+    height: 75px;
+}
+
+.navbar img {
+    display: inline;
+    width: 50px;
+    position: relative;
+    top: 15%;
+    left: 2.5%;
+    float: left;
+}
+
+.navbar ol {
+    display: inline;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    float: right;
+    position: relative;
+    top: 30%;
+    right: 2.5%;
+}
+
+.navbar li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.content {
+    margin: auto;
+    background-image: url("background.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 0;
+    padding-top: 66%;
+}
+
+.content .text {
+    color: white;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.content .text h1{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.content .text p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1200px){
+    .navbar {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1200px){
+    .navbar {
+        background-color: red;
+        color: white;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+    .content .text h1 {
+        font-size: 25px
+    }
+
+    .content .text p {
+        font-size: 20px
+    }
+    .navbar {
+        background-color: lightgreen;
+        color: black;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .content .text h1 {
+        font-size: 35px
+    }
+
+    .content .text p {
+        font-size: 30px
+    }
+
+    .navbar {
+        background-color: yellow;
+        color: black;
+    }
+}
