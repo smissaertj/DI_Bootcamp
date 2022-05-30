@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 3em;
+    width: 800px;
+    height: 630px;
+
+    /*Flexbox properties*/
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 3px solid red;
+}
+
+.box {
+    height: 200px;
+    font-size: 25px;
+    text-align: center;
+    /*border: 1px solid red;*/
+    background: #5f93e8;
+}
+
+.box1 {
+    width: 75%;
+}
+
+.box2 {
+    width: 100%;
+}
+
+.box3 {
+    width: 75%;
+}
+

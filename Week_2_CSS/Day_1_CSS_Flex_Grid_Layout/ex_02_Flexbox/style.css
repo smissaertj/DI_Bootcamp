@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 3em;
+    width: 800px;
+    height: 630px;
+
+    /*Flexbox properties*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 3px solid red;
+}
+
+.container > * {
+    border: 3px solid red;
+}
+
+.box {
+
+    width: ;
+    height: 200px;
+}
+
+.box1 {
+    background-color: #5f93e8;
+    width: 100vw;
+}
+
+.box2 {
+    background-color: #5f93e8;
+    width: 25vw;
+    align-self: center;
+}
+
+.box3 {
+    background-color: #5f93e8;
+    width: 100vw;
+}

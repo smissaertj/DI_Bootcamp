@@ -1,0 +1,35 @@
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+.container {
+    width: 1000px;
+    height: 900px;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 250px 750px;
+    grid-template-rows: 200px;
+    grid-gap: 25px;
+    justify-content: center;
+    align-content: center;
+    /*border: 5px solid red;*/
+}
+
+.box {
+    height: 200px;
+}
+
+.box1, .box3, .box5 {
+    background-color: red;
+}
+
+.box2, .box4, .box6 {
+    background-color: dodgerblue;
+}
+
+.box7 {
+    background-color: yellow;
+    grid-column: 1 / span 2;
+}
