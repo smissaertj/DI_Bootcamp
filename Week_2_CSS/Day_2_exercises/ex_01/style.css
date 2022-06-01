@@ -72,11 +72,15 @@ body {
     border: 10px solid rgba(0,0,0, 0.3);
 }
 
+.card-image{
+    height: 50px;
+}
+
 .card img {
     border-radius: 100px;
     width: 100px;
     position: relative;
-    bottom: -70px;
+    bottom: -20px;
 }
 
 .card2 {
