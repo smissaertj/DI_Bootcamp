@@ -76,7 +76,7 @@ body {
     height: 50px;
 }
 
-.card img {
+.card-image img {
     border-radius: 100px;
     width: 100px;
     position: relative;
@@ -96,7 +96,6 @@ body {
 
 .card-top .text {
     padding-top: 20px;
-
 }
 
 .card-bottom {
