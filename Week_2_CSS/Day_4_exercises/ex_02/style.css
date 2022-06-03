@@ -1,0 +1,9 @@
+.header {
+    height: 50vh;
+    background-image: url("./img/header.jpg");
+    color: white;
+}
+
+.feature-icon, h2 {
+    color: dodgerblue;
+}
