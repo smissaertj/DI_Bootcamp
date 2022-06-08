@@ -11,13 +11,13 @@ IF they say they are over 18, respond with: "Powering On. Enjoy the ride!"
  */
 
 let age = prompt('What is your age?');
-let age_limit = 18;
+let ageLimit = 18;
 
 if (isNaN(age)) {
     alert('Please provide a valid number.');
-} else if (age < age_limit) {
+} else if (age < ageLimit) {
     alert('Sorry, you are too young to drive this car. Powering off.')
-} else if (age > age_limit) {
+} else if (age > ageLimit) {
     alert('Powering On. Enjoy the ride!')
 } else {
     alert('Congratulations on your first year of driving. Enjoy the ride!')
