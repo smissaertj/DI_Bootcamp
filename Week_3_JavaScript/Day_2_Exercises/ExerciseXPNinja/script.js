@@ -34,9 +34,10 @@ Console.log a string as follows: "I found Nemo at [the position of the word Nemo
 If you can’t find Nemo, console.log “I can’t find Nemo”.
  */
 
-let sentence = prompt("Provide a sentence with the word 'Nemo': ");
+let sentence = prompt("Provide a sentence with the word 'Nemo': ").toLowerCase();
+sentence = sentence.replace(',', '');
 let sentence_array = sentence.split(" ");
-let indexNemo = sentence_array.indexOf("Nemo");
+let indexNemo = sentence_array.indexOf("nemo");
 if (indexNemo > 0) {
   console.log(`'Nemo' is word number ${indexNemo + 1} in your sentence.`);
 } else {
