@@ -37,12 +37,23 @@ Must not be greater than 5 digits in length
 let zipCode = prompt('Please provide a Zip Code:');
 
 // No RegEx
-let numbers = '123456789';
-for (let i = 0; i < zipCode.length; i++){
-    if (!zipCode[i].match(numbers)) {
+let numbers = '0123456789';
+let isNumeric = [];
 
+for (let i = 0; i < zipCode.length; i++) {
+    if (numbers.split('').includes(zipCode[i])) {
+      isNumeric.push(true);
+    } else {
+      isNumeric.push(false);
     }
 }
+
+if (zipCode.length <= 5 && !isNumeric.includes(false) ) {
+  console.log('success');
+} else {
+  console.log('error');
+}
+
 
 // RegEx
 let regexPattern = /^\d+$/g;
