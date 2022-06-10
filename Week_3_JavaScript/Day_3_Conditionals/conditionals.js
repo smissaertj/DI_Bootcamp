@@ -56,3 +56,14 @@ switch (c) {
     default:
         console.log('c is none of the above.');
 }
+
+// Class  Exercise - Convert Switch to If ... Else
+let browser = 'Chrome';
+
+if (browser === 'Edge') {
+  alert('You\'ve got the Edge!');
+} else if (/^(Chrome|Firefox|Safari|Opera)$/.test(browser) ) {
+  alert('Okay we support these browsers too');
+} else {
+  alert('We hope that this page looks ok!');
+}
