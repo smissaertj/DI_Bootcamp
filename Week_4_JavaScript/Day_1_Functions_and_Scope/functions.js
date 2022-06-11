@@ -48,8 +48,8 @@ Exercise 1
 4. Call the function
 */
 
-const ParentsAge = (age) => {
-  ageMum = age * 2;
+const ParentsAge = (myAge) => {
+  ageMum = myAge * 2;
   ageDad = ageMum * 1.2;
   console.log(`My mum is ${ageMum} years old and my dad ${ageDad} years old.`)
 }
@@ -76,3 +76,32 @@ const myNameAge = (name, age) => {
 }
 console.log(myNameAge('Joeri', 35));
 console.log(myNameAge('Jane', 35));
+
+
+/*
+Exercise 2
+1. Create a structured html file linked to a js file
+2. Write a JS function that takes a parameter: myAge
+3. Return the age of my mum (my mum is twice my age)
+4. Call the function
+5. Console.log the age of my mum
+ */
+
+const mumsAge = (myAge) => myAge * 2
+console.log(mumsAge(35));
+
+
+/*
+Object Methods
+Methods are actions stored in properties as function definitions.
+
+The 'this' keyword refers to the object, while this.property is the property of the object
+ */
+let person= {
+    firstName : "Sarah",
+    eyeColor: "blue",
+    eat : function () {
+        console.log(`My name is ${this.firstName} and I love chocolate`)
+    }
+}
+person.eat(); // access the object method
