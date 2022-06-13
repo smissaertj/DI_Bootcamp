@@ -7,6 +7,28 @@ function HelloWorld(){
 
 HelloWorld(); // function call
 
+// function with a return value
+function findSumReturn(num1, num2){
+    return num1 + num2;
+}
+
+let result = findSumReturn(5, 6);
+console.log(result);
+
+
+// Return the first letter of each array element in a string in alphabetical order and display in console
+// Result should be: AABJKLS
+arr = ['Joeri', 'Ally', 'Shivastav', 'Kadeer', 'Laurent', 'Angkush', 'Bruno'];
+
+function returnFirstLetters(arr){
+    result = ''
+    for (let el of arr.sort()){
+        result += el[0];
+    }
+    return result
+}
+console.log(returnFirstLetters(arr))
+
 /*
 Function Expression
 */

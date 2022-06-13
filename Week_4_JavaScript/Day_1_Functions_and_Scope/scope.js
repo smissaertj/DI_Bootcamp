@@ -53,7 +53,7 @@ var vs let vs const
 - All can be used to declare global scoped variabled
 - var: Function scoped, can be redeclared
 - let: Block scoped, cannot be redeclared in the same scope
-- const: Block scoped, cannot be reassigned
+- const: Block scoped, cannot be reassigned or redeclared
 */
 
 // Function Scope
