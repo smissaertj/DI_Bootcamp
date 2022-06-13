@@ -132,7 +132,7 @@ for (let val of names) {
     if (typeof(val) === "string") {
         console.log(val);
     } else {
-        continue;
+        break;
     }
 }
 
