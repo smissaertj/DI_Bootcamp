@@ -29,10 +29,10 @@ const playTheGame = () => {
 
             if (isNaN(userNumber)){
                 alert('Sorry, that\'s not a number. Goodbye.')
-            } else if (userNumber < 0 || userNumber > 10) {
+            } else if (userNumber < 1 || userNumber > 9) {
                 alert('Sorry that\'s not a good number. Goodbye.')
             } else {
-                let max = 10;
+                let max = 9;
                 let min = 0;
                 computerNumber = Math.ceil(Math.random() * (max - min) + min);
             }
