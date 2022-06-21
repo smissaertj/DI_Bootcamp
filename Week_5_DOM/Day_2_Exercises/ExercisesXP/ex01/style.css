@@ -1,0 +1,12 @@
+.fadeOut{
+    opacity: 0;
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    0% { opacity: 1 }
+    25% { opacity: 0.75}
+    50% { opacity: 0.5 }
+    75% { opacity: 0.25}
+    100% { opacity: 0}
+}
