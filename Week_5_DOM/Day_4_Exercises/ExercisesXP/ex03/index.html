@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    #target {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      background: yellow;
+    }
+    #box {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-color: red;
+    }
+    </style>
+</head>
+<body>
+    <div id="target" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+    <br>
+    <div id="box" draggable="true" ondragstart="onDragStart(event)"></div>
+
+    <script>
+    function onDragStart(event){
+        event.dataTransfer.setData("text/plain", event.target.id);
+    }
+    
+    function onDragOver(event){
+        event.preventDefault();
+    }
+    
+    function onDrop(event){
+        event.preventDefault()
+        let box = event.dataTransfer.getData("text/plain");
+        event.target.appendChild(document.getElementById(box));
+    }
+    </script>
+</body>
+</html>
