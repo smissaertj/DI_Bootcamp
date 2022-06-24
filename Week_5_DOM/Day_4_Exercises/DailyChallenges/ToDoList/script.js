@@ -33,6 +33,7 @@ const addTask = () => {
 const doneTask = (id) => {
   let taskLabel = document.getElementById('label-'+id);
   taskLabel.classList.toggle('text-decoration-line-through')
+  listTasks[id].done = !listTasks[id].done;
 }
 
 
