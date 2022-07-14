@@ -1,3 +1,6 @@
 [submodule "di-portfolio-site"]
 	path = di-portfolio-site
 	url = git@github.com:smissaertj/di-portfolio-site.git
+[submodule "Hackathons/Quiz-App"]
+	path = Hackathons/Quiz-App
+	url = git@github.com:smissaertj/Quiz-App.git
