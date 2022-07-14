@@ -133,10 +133,10 @@ while guessed_number != 'quit':
     random_number = random.randint(1, 9)
     guessed_number = input('Guess a number between 1 and 9 (inclusive), type quit to exit: ')
 
-    if guessed_number == random_number:
+    if int(guessed_number) == random_number:
         win_count += 1
         print('Winner!')
-    elif guessed_number != random_number and guessed_number != 'quit':
+    elif int(guessed_number) != random_number and guessed_number != 'quit':
         loss_count += 1
         print('Better luck next time!')
     else:
