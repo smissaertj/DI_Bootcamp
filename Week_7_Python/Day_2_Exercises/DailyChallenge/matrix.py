@@ -25,9 +25,26 @@ matrix = [
     '^r!'
 ]
 
+# decoded = ''
+# for el in zip(*matrix):
+#     for char in el:
+#         if re.match('[a-zA-Z\s]', char):
+#             decoded += char
+# print(decoded)
+
+
+row_len = len(matrix)
+column_len = len(matrix[0])
+add_space = False
 decoded = ''
-for el in zip(*matrix):
-    for char in el:
-        if re.match('[a-zA-Z\s]', char):
-            decoded += char
-print(decoded)
+
+for column_num in range(column_len):
+    for row_num in range(row_len):
+        if matrix[row_num][column_num].isalpha():
+            decoded += matrix[row_num][column_num]
+            add_space = True
+        elif add_space:
+            decoded += ' '
+            add_space = False
+
+print(decoded.strip())
