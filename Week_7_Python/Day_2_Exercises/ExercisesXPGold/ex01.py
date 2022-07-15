@@ -40,8 +40,8 @@ def throw_until_doubles():
         dice_1 = throw_dice()
         dice_2 = throw_dice()
         throw_count += 1
-    else:
-        return throw_count
+
+    return throw_count
 
 
 def main():
