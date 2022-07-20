@@ -44,21 +44,41 @@ class Zoo:
             self.animals.remove(animal_sold)
 
     def sort_animals(self):
-        self.sorted_animals = sorted(self.animals)
-        self.grouped_animals = {}
+        grouped_animals = {}
+        curr_group = []
+        counter = 1
 
-        self.key = 1
-        for animal in self.sorted_animals:
-            print(animal)
-            self.grouped_animals[len(self.grouped_animals) + 1] = [animal]
+        for animal in sorted(self.animals):
+            if not curr_group:
+                curr_group.append(animal)
+            elif animal[0] == curr_group[0][0]:
+                curr_group.append(animal)
+            else:
+                if len(curr_group) == 1:
+                    grouped_animals[counter] = curr_group[0]
+                else:
+                    grouped_animals[counter] = curr_group
+                curr_group = [animal]
+                counter += 1
+
+        if len(curr_group) == 1:
+            grouped_animals[counter] = curr_group[0]
+        else:
+            grouped_animals[counter] = curr_group
+
+        return grouped_animals
+
+    def get_groups(self):
+        print(self.sort_animals())
 
 
-        print(self.grouped_animals)
-
-
-my_zoo = Zoo('myzoo')
-my_zoo.add_animal('Ape')
-my_zoo.add_animal('Aardvark')
-my_zoo.add_animal('Bear')
-my_zoo.add_animal('Baboon')
-my_zoo.sort_animals()
+ramat_gan_safari = Zoo('myzoo')
+ramat_gan_safari.add_animal('Ape')
+ramat_gan_safari.add_animal('Aardvark')
+ramat_gan_safari.add_animal('Bear')
+ramat_gan_safari.add_animal('Baboon')
+ramat_gan_safari.add_animal('Eel')
+ramat_gan_safari.add_animal('Giraffe')
+ramat_gan_safari.add_animal('Zebra')
+ramat_gan_safari.add_animal('Zebu')
+ramat_gan_safari.get_groups()
