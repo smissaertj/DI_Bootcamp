@@ -33,6 +33,11 @@ class AlienDog(Alien, Dog):
         print("{} barked, 0ul10ul0u (that's how aliens dogs bark..) !".format(self.name))
 
 
+# Check the Method Resolution Order
+print(AlienDog.mro())
+print(AlienDog.__mro__)
+
+
 my_normal_dog = Dog("Roger")
 my_normal_dog.sleep()
 # >> zzzZZZZZ
