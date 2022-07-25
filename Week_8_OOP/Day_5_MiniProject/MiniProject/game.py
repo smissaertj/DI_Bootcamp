@@ -14,11 +14,8 @@ class Game():
         return random.choice(self.items)
 
     def get_game_result(self, user_item, computer_item):
-        if user_item == 'r' and computer_item == 's':
-            return 'win'
-        elif user_item == 'p' and computer_item == 'r':
-            return 'win'
-        elif user_item == 's' and computer_item == 'p':
+        state = (user_item, computer_item)
+        if state in [('r', 's'), ('p', 'r'), ('s', 'p')]:
             return 'win'
         elif user_item == computer_item:
             return 'draw'
