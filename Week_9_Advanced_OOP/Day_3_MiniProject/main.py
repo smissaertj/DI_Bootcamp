@@ -1,7 +1,7 @@
 class Character:
     def __init__(self, name, life=20, attack=10):
         self.name = name
-        self.life = 20
+        self.life = life
         self.attack = attack
 
     @staticmethod
@@ -10,8 +10,8 @@ class Character:
 
 
 class Druid(Character):
-    def __init__(self, name, life=20, attack=10):
-        super().__init__(name, life=20, attack=10)
+    def __init__(self, name):
+        super().__init__(name)
         print(f'{self.name}: Wielding the power of nature!')
 
     def meditate(self):
@@ -26,8 +26,8 @@ class Druid(Character):
 
 
 class Warrior(Character):
-    def __init__(self, name, life=20, attack=10):
-        super().__init__(name, life=20, attack=10)
+    def __init__(self, name):
+        super().__init__(name)
         print(f'{self.name}: Slayer of dragons, rescuer of princesses!')
 
     def brawl(self, enemy):
@@ -44,8 +44,8 @@ class Warrior(Character):
 
 
 class Mage(Character):
-    def __init__(self, name, life=20, attack=10):
-        super().__init__(name, life=20, attack=10)
+    def __init__(self, name):
+        super().__init__(name)
         print(f'{self.name}: Devoting life to the study and practice of spell casting!')
 
     def summon(self):
