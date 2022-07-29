@@ -25,8 +25,8 @@ class Queue():
         return self.humans.index(person)
 
     def swap(self, person1, person2):
-        index_person1 = self.humans.index(person1)
-        index_person2 = self.humans.index(person2)
+        index_person1 = self.find_in_queue(person1)
+        index_person2 = self.find_in_queue(person2)
 
         temp_1 = self.humans[index_person1]
         temp_2 = self.humans[index_person2]
