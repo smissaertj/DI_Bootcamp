@@ -5,7 +5,6 @@ class AnagramChecker():
             content = file.readlines()
             self.word_list = [word.lower().strip() for word in content]
 
-
     def is_valid_word(self, word):
         """ check if a given word is a valid word """
         return True if word.lower() in self.word_list else False

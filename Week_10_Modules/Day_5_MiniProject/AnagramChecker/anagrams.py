@@ -1,4 +1,4 @@
-from main import AnagramChecker
+from anagram_checker import AnagramChecker
 from string import ascii_letters
 
 def menu():
