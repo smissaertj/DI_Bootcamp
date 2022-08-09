@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang=”en”>
+  <head>
+    <meta charset=”UTF-8">
+    <title>Blog > Articles</title>
+  </head>
+  <body>
+    <h1>
+      Articles
+    </h1>
+    {% for key,value in articles.items() %}
+      <h2>{{ key }}: {{ value }}</h2>
+    {% endfor %}
+
+    <a href="{{ url_for('blog') }}"><button>Go Back</button></a>
+  </body>
+</html>
