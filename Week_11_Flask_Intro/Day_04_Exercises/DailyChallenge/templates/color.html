@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block style %}
+  <style>
+    body {
+        background-color: {{ bgcolor }};
+    }
+  </style>
+{% endblock %}
+{% block body %}
+  {{ super() }}
+{% endblock %}
