@@ -24,25 +24,31 @@
           </div>
         </form>
       </div>
-      <ul class="list-group list-group-flush">
-        {% for task in tasks %}
-          <li class="list-group-item">
-            <a href="{{ url_for('complete', task_id=task.id) }}" style="text-decoration: none">
-              <button class="btn btn-small btn-success" type="button" id="btn-complete">V</button>
-            </a>
-            <a href="{{ url_for('delete', task_id=task.id) }}" style="text-decoration: none">
-              <button class="btn btn-small btn-danger" type="button" id="btn-delete">X</button>
-            </a>
-            {% if task.completed %}
-              <span class="fw-bold" style="text-decoration: line-through">
-             {% else %}
-              <span class="fw-bold">
-            {% endif %}
-              {{ task.description }}
-              </span>
-          </li>
-        {% endfor %}
-      </ul>
+      {% if tasks|length > 0 %}
+        <ul class="list-group list-group-flush">
+          {% for task in tasks %}
+            <li class="list-group-item">
+              <a href="{{ url_for('complete', task_id=task.id) }}" style="text-decoration: none">
+                <button class="btn btn-small btn-success" type="button" id="btn-complete">V</button>
+              </a>
+              <a href="{{ url_for('delete', task_id=task.id) }}" style="text-decoration: none">
+                <button class="btn btn-small btn-danger" type="button" id="btn-delete">X</button>
+              </a>
+              {% if task.completed %}
+                <span class="fw-bold text-muted" style="text-decoration: line-through">
+               {% else %}
+                <span class="fw-bold">
+              {% endif %}
+                {{ task.description }}
+                </span>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <div class="alert alert-secondary w-75 text-center mx-auto" role="alert">
+          Congrats! You have no tasks.
+        </div>
+      {% endif %}
       <div class="card-footer text-muted text-center">
         <a href="{{ url_for('clear_db') }}">
           <button class="btn btn-sm btn-outline-secondary" type="button" id="btn-clear">Clear</button>
