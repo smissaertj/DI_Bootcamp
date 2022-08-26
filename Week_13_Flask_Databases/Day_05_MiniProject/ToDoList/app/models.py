@@ -8,7 +8,6 @@ class ToDo(db.Model):
     def save_task_to_db(self):
         db.session.add(self)
         db.session.commit()
-
     def complete_task(self):
         self.completed = True if self.completed == False else False
         db.session.commit()
